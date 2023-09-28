@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/build",
+  "command": "/usr/bin/clang++  -isystem /usr/local/include/eigen3 -isystem /usr/local/include -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -Xclang -fopenmp -std=gnu++14 -o CMakeFiles/gp.dir/main.cpp.o -c /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/main.cpp",
+  "file": "/Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/main.cpp"
+},
+{
+  "directory": "/Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/build",
+  "command": "/usr/bin/clang++  -isystem /usr/local/include/eigen3 -isystem /usr/local/include -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -Xclang -fopenmp -std=gnu++14 -o CMakeFiles/gp.dir/GaussianProcess.cpp.o -c /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/GaussianProcess.cpp",
+  "file": "/Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/GaussianProcess.cpp"
+},
+{
+  "directory": "/Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/build",
+  "command": "/usr/bin/clang++  -isystem /usr/local/include/eigen3 -isystem /usr/local/include -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -Xclang -fopenmp -std=gnu++14 -o CMakeFiles/gp.dir/helper_functions.cpp.o -c /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/helper_functions.cpp",
+  "file": "/Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/helper_functions.cpp"
+}
+]
