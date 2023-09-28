@@ -9,6 +9,7 @@ src/build_5/
 src/build_6/
 
 build/
+.vscode/
 
 output/
 output_0/
