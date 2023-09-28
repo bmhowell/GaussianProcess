@@ -13,7 +13,6 @@
 #include <random>
 #include <cmath>
 #include <stdexcept>
-#include <chrono>
 #define EIGEN_USE_BLAS
 
 // Function type definition

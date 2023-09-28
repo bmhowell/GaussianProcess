@@ -73,43 +73,43 @@ CMakeFiles/gp.dir/main.cpp.o: CMakeFiles/gp.dir/flags.make
 CMakeFiles/gp.dir/main.cpp.o: ../main.cpp
 CMakeFiles/gp.dir/main.cpp.o: CMakeFiles/gp.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gp.dir/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gp.dir/main.cpp.o -MF CMakeFiles/gp.dir/main.cpp.o.d -o CMakeFiles/gp.dir/main.cpp.o -c /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/main.cpp
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gp.dir/main.cpp.o -MF CMakeFiles/gp.dir/main.cpp.o.d -o CMakeFiles/gp.dir/main.cpp.o -c /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/main.cpp
 
 CMakeFiles/gp.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gp.dir/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/main.cpp > CMakeFiles/gp.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/main.cpp > CMakeFiles/gp.dir/main.cpp.i
 
 CMakeFiles/gp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gp.dir/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/main.cpp -o CMakeFiles/gp.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/main.cpp -o CMakeFiles/gp.dir/main.cpp.s
 
 CMakeFiles/gp.dir/GaussianProcess.cpp.o: CMakeFiles/gp.dir/flags.make
 CMakeFiles/gp.dir/GaussianProcess.cpp.o: ../GaussianProcess.cpp
 CMakeFiles/gp.dir/GaussianProcess.cpp.o: CMakeFiles/gp.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gp.dir/GaussianProcess.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gp.dir/GaussianProcess.cpp.o -MF CMakeFiles/gp.dir/GaussianProcess.cpp.o.d -o CMakeFiles/gp.dir/GaussianProcess.cpp.o -c /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/GaussianProcess.cpp
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gp.dir/GaussianProcess.cpp.o -MF CMakeFiles/gp.dir/GaussianProcess.cpp.o.d -o CMakeFiles/gp.dir/GaussianProcess.cpp.o -c /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/GaussianProcess.cpp
 
 CMakeFiles/gp.dir/GaussianProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gp.dir/GaussianProcess.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/GaussianProcess.cpp > CMakeFiles/gp.dir/GaussianProcess.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/GaussianProcess.cpp > CMakeFiles/gp.dir/GaussianProcess.cpp.i
 
 CMakeFiles/gp.dir/GaussianProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gp.dir/GaussianProcess.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/GaussianProcess.cpp -o CMakeFiles/gp.dir/GaussianProcess.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/GaussianProcess.cpp -o CMakeFiles/gp.dir/GaussianProcess.cpp.s
 
 CMakeFiles/gp.dir/helper_functions.cpp.o: CMakeFiles/gp.dir/flags.make
 CMakeFiles/gp.dir/helper_functions.cpp.o: ../helper_functions.cpp
 CMakeFiles/gp.dir/helper_functions.cpp.o: CMakeFiles/gp.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gp.dir/helper_functions.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gp.dir/helper_functions.cpp.o -MF CMakeFiles/gp.dir/helper_functions.cpp.o.d -o CMakeFiles/gp.dir/helper_functions.cpp.o -c /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/helper_functions.cpp
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gp.dir/helper_functions.cpp.o -MF CMakeFiles/gp.dir/helper_functions.cpp.o.d -o CMakeFiles/gp.dir/helper_functions.cpp.o -c /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/helper_functions.cpp
 
 CMakeFiles/gp.dir/helper_functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gp.dir/helper_functions.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/helper_functions.cpp > CMakeFiles/gp.dir/helper_functions.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/helper_functions.cpp > CMakeFiles/gp.dir/helper_functions.cpp.i
 
 CMakeFiles/gp.dir/helper_functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gp.dir/helper_functions.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/helper_functions.cpp -o CMakeFiles/gp.dir/helper_functions.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brianhowell/Desktop/Berkeley/MSOL/gaussian_process/helper_functions.cpp -o CMakeFiles/gp.dir/helper_functions.cpp.s
 
 # Object files for target gp
 gp_OBJECTS = \

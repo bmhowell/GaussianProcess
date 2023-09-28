@@ -7,8 +7,6 @@
 #include "helper_functions.h"
 
 int main(int argc, char** argv) {
-    auto start = std::chrono::high_resolution_clock::now();
-
     //////////////  PARSE ARGS  //////////////
     // opt constraints (default) and sim settings (default)
     constraints c;
@@ -65,16 +63,6 @@ int main(int argc, char** argv) {
     model.predict(x_test, compute_std);
     std::cout << "Predicted values: \n" << model.get_y_test().transpose().head(5) << std::endl;
     std::cout << "Predicted uncertainty: \n" << model.get_y_test_std().transpose().head(5) << std::endl;
-
-    // Get the current time after the code segment finishes
-    auto end = std::chrono::high_resolution_clock::now();
-    auto t = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
-    auto duration = t.count() / 1e6;
-    std::cout << "\n---Time taken by code segment: "
-              << duration  / 60
-              << " min---" << std::endl;
-
-
 }
 
 // Command Line Option Processing
