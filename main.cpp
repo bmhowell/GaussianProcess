@@ -41,18 +41,13 @@ int main(int argc, char** argv) {
     Eigen::VectorXd y_test;
     Eigen::VectorXd y_test_std;
 
-    build_dataset(bopti, x_train, y_train, x_test, y_test);  
-    GaussianProcess model = GaussianProcess("RBF", file_path);
+    build_dataset(bopti, x_train, y_train, x_test, y_test);
+
+    // specify model {RBF, RQK, LOC_PER}
+    GaussianProcess model = GaussianProcess("LOC_PER", file_path);
 
     // STEP 3: train model
-    std::vector<double> model_param = {0.983407, 0.804468, 0.000923096};
-    const bool pre_learned = true;
-    train_prior(model,
-                x_train, 
-                y_train, 
-                model_param, 
-                s.time_stepping, 
-                pre_learned);
+    model.train(x_train, y_train);
     
     // STEP 4: validate
     const bool validate = true; 

@@ -58,11 +58,13 @@ private:
     double _error_val;                                     // ∈ ℝ         ⊂ validate()
     
     // learned parameters
-    double _l, _sf, _sn, _lml;
+    double _l, _sf, _sn, _lml, _p, _a;
 
     // MEMBER FUNCTIONS
 
-    void kernelGP(Eigen::MatrixXd& X, Eigen::MatrixXd& Y, double& length, double& sigma);
+    void kernelGP(Eigen::MatrixXd &X, Eigen::MatrixXd &Y, 
+                  double &length, double &sigma, double &p,
+                  double &a);
     /*  description:
      *      kernel construction currently equipped with the following kernels:
      *          - radial basis function --> "RBF"
@@ -91,31 +93,37 @@ private:
     */
     
     /* scaling data */
-    void scale_data(Eigen::MatrixXd& X_VAL,   Eigen::VectorXd& Y_VAL, bool VAL);
+    void scale_data(Eigen::MatrixXd &X_VAL,   Eigen::VectorXd &Y_VAL, bool VAL);
 
-    void scale_data(Eigen::MatrixXd& X, Eigen::VectorXd& Y);
+    void scale_data(Eigen::MatrixXd &X, Eigen::VectorXd &Y);
 
-    void scale_data(Eigen::MatrixXd& X_TEST);
+    void scale_data(Eigen::MatrixXd &X_TEST);
 
-    void unscale_data(Eigen::VectorXd& Y_TEST);
+    void unscale_data(Eigen::VectorXd &Y_TEST);
 
     /* model selection - compute negative log likelihood */
-    double compute_lml(double& length, double& sigma, double& noise);
+    double compute_lml(double &length, 
+                       double &sigma, 
+                       double &noise, 
+                       double &p,
+                       double &a);
     /* description:
         - choice of optimization method
         - model parameters: 
             - length scale: _l
             - signal variance: σ_f^2
             - noise parameter: σ_n^2
+            - LOC_PER - periodicity: p
+            - RQK - large/small length scale ratio: α
     */
 
-    void sort_data(Eigen::MatrixXd& PARAM);
+    void sort_data(Eigen::MatrixXd &PARAM);
     /* 
         Implements sorting algorithm to rank top performers 
         for genetic algorithm. 
     */ 
 
-    void gen_opt(double& _l, double& _sf, double& _sn);
+    void gen_tune_param();
     /* 
         Genetic algorithm used for maximization of marginal log likelihood. 
     */ 
@@ -133,16 +141,24 @@ public:
     ~GaussianProcess();
            
     /* training functions*/
-    void train(Eigen::MatrixXd& X_TRAIN, Eigen::VectorXd& Y_TRAIN);
+    void train(Eigen::MatrixXd &X_TRAIN, Eigen::VectorXd &Y_TRAIN);
 
-    void train(Eigen::MatrixXd& X_TRAIN, Eigen::VectorXd& Y_TRAIN,
-               std::vector<double>& model_param); 
+    void train(Eigen::MatrixXd &X_TRAIN, Eigen::VectorXd &Y_TRAIN,
+               std::vector<double> &model_param); 
+    
+    // void train(Eigen::MatrixXd &X_TRAIN, Eigen::VectorXd &Y_TRAIN,
+    //            Eigen::MatrixXd &X_VAL,   Eigen::VectorXd &Y_VAL); 
+    /* 
+        Either: 
+            - perform model selection
+            - or use pre-defined model parameters       
+    */
 
     /* validation */
-    double validate(Eigen::MatrixXd& X_VAL, Eigen::VectorXd& Y_VAL);
+    double validate(Eigen::MatrixXd &X_VAL, Eigen::VectorXd &Y_VAL);
 
     /* inference */
-    void predict(Eigen::MatrixXd& X_TEST, bool compute_std = true);
+    void predict(Eigen::MatrixXd &X_TEST, bool compute_std = true);
 
     /*  Conditioning the GP:
      *
@@ -187,6 +203,16 @@ public:
     Eigen::VectorXd get_y_test_std();
 
     std::vector<int> get_candidates();
+
+    double get_length_param();
+
+    double get_sigma_param();
+    
+    double get_noise_param();
+
+    double get_period_param();
+
+    double get_alpha_param();
 };
 
 #endif // SRC_GAUSSIANPROCESS_H_
